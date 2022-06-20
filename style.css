@@ -37,7 +37,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    min-height: 100vh;
     width: 80%;
 }
 .section-wrapper {
@@ -103,7 +102,7 @@ button:hover {
     cursor: pointer;
 }
 .chart-wrapper {
-    max-width: 100%;
+    max-width: 90%;
     height: 20%;
     margin-top: 2rem;
 }
@@ -172,7 +171,6 @@ footer {
 }
 @media (min-width:1000px) {
     .wrapper {
-        height: 70vh;
         width: 45%;
     }
     .navbar {
