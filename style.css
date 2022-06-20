@@ -1,0 +1,239 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+    --Blue: hsl(223, 87%, 63%);
+}
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.navbar {
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 2rem;
+    margin: 4rem auto 2rem;
+}
+.navbar > img {
+    height: 1rem;
+    width: 3rem;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    width: 80%;
+}
+.section-wrapper {
+    font-size: 16px;
+    color: var(--Very-Dark-Blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1 > span {
+    color: var(--Gray);
+    font-weight: 300;
+}
+p {
+    font-size: 12px;
+    padding: 1.2rem;
+}
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.error-wrapper {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#subscribe,
+button {
+    border-radius: 30px;
+}
+#subscribe {
+    color: var(--Pale-Blue);
+    border: 1px solid var(--Pale-Blue);
+    padding: .6rem 4rem .6rem 2rem;
+    width: 100%;
+}
+::placeholder {
+    color: var(--Pale-Blue);
+}
+#subscribe.active {
+    border: 1px solid var(--Light-Red);
+}
+.error.active {
+    font-size: 11px;
+    color: var(--Light-Red);
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+button {
+    background-color: var(--Blue);
+    color:hsl(0, 0%, 100%);
+    border: 1px solid var(--Blue);
+    font-weight: 600;
+    padding: .6rem;
+    margin-top: .7rem;
+    box-shadow: 0px 3px 5px var(--Pale-Blue);
+}
+button:hover {
+    background-color:hsla(223, 87%, 63%, .8);
+    cursor: pointer;
+}
+.chart-wrapper {
+    max-width: 100%;
+    height: 20%;
+    margin-top: 2rem;
+}
+.chart-wrapper > img {
+    width: 100%;
+    height: 100%;
+}
+.socials-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+#middle-item {
+    margin: auto .7rem;
+}
+.socials-item {
+    border: 1px solid var(--Pale-Blue);
+    border-radius: 90%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.socials-item:hover,
+.socials-item:focus {
+    background-color: var(--Blue);
+    cursor: pointer;
+}
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:var(--Blue);
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-size: .9rem;
+}
+a:hover,
+a:focus {
+    color:hsl(0, 0%, 100%);
+}
+#copyright {
+    color: var(--Gray);
+    font-size: 10px;
+    padding: 0;
+}
+footer {
+    position: fixed;
+    bottom: 5px;
+    height: 15px;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+@media (min-width:1000px) {
+    .wrapper {
+        height: 70vh;
+        width: 45%;
+    }
+    .navbar {
+        margin: 2rem auto;
+    }
+    .navbar > img {
+        height: 1.3rem;
+        width: 4rem;
+    }
+    .section-wrapper {
+        font-size: 1.7rem;
+    }
+    .section-wrapper > p {
+        font-size: 18px;
+    }
+    .subscribe-form {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: .7rem;
+        margin-bottom: 0rem;
+        width: 85%;
+    }
+    .error-wrapper {
+        width: 65%;
+    }
+    #subscribe {
+        width: 100%;
+        margin-right: 1rem;
+        padding-left: 2rem;
+    }
+    button {
+        margin-top: 0;
+        width: 30%;
+        align-self: baseline;
+    }
+    #subscribe,
+    button {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .error.active {
+        align-self: flex-start;
+        margin: .5rem 1.5rem 1rem;
+    }
+    .chart-wrapper {
+        height: 45%;
+        margin-top: 2rem;
+    }
+    .socials-list {
+        margin-top: 2rem;
+        margin-bottom: .5rem;
+    }
+    .socials-item {
+        height: 1.3rem;
+        width: 1.3rem;
+        text-align: center;
+    }
+    i {
+        font-size: .7rem;
+    }
+    #copyright {
+        margin-top: 1rem;
+    }
+}

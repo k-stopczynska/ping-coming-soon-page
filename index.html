@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="./style.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="./app.js" defer></script>
+  <title>Frontend Mentor | Ping coming soon page</title>
+</head>
+<body>
+  <nav class="navbar">
+    <img src="./images/logo.svg" alt="logo">
+  </nav>
+  <main class="wrapper">
+    <section class="section-wrapper">
+      <h1><span>We are launching</span> soon!</h1>
+      <p>Subscribe and get notified</p>
+    </section>
+    <form class="subscribe-form" method="GET" action ="/">
+      <div class="error-wrapper">
+      <label for="subscribe"></label>
+        <input type="text" placeholder="Your email address..." id="subscribe">
+        <div class="error"></div>
+      </div>
+        <button type="submit">Notify Me</button>
+    </form>
+    <div class="error"></div>
+    <div class="chart-wrapper">
+      <img src="./images/illustration-dashboard.png" alt="chart">
+    </div>
+    <ul class="socials-list">
+      <li class="socials-item"><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+      <li class="socials-item" id="middle-item"><a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+      <li class="socials-item"><a href="https://www.instagram.com"" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+    </ul>
+ <p id="copyright"> &copy; Copyright Ping. All rights reserved.</p>
+  </main>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/k-stopczynska">k-stopczynska</a>.
+    </p>
+  </footer>
+</body>
+</html>
